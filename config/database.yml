@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: crypto_profile_api_production
-  username: crypto_profile_api
+  database: <%= ENV['CRYPTO_PROFILE_API_DATABASE'] %>
+  username: <%= ENV['CRYPTO_PROFILE_API_DATABASE_USERNAME'] %>
   password: <%= ENV['CRYPTO_PROFILE_API_DATABASE_PASSWORD'] %>
